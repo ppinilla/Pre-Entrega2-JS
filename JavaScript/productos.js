@@ -1,4 +1,4 @@
-const limpiadores = [
+/* const limpiadores = [
     {id: 1, foto: "/img/Gentle Milk Cleanser" ,nombre: "Gentle Milk Cleanser", cantidad: 190, descripcion: "Leche limpiadora suavizante", precio: 2900, codigo: 10058},
     {id: 2, foto: "/img/Alpine Roses Cleanser Emulsion", nombre: "Alpine Roses Cleanser Emulsion", cantidad: 100, descripcion: "Suave microemulsion de limpieza que desmaquilla y limpia con rapidez", precio: 2850, codigo: 19198},
     {id: 3, foto: "/img/Vitamin C Cleanser",  nombre: "Vitamin C Cleanser", cantidad: 180, descripcion: "Gel limpiador espumante para rostro y cuerpo", precio: 2140, codigo: 12601},
@@ -32,7 +32,7 @@ const locionesBrumas = [
 const HidratacionTermal = [
     {id: 1, foto: "/img/Thermal New Rich" ,nombre: "Thermal New Rich", cantidad: 50, descripcion: "Crema termal rica. Textura cremosa y emoliente.", precio: 3000, codigo: 13943},
     {id: 2, foto: "/img/Thermal New Light" ,nombre: "Thermal New Light", cantidad: 50, descripcion: "Crema termal ligera. Textura crema gel ultraliviana.", precio: 3000, codigo: 13967},
-];
+]; */
 
 /* let contenedor1 = document.getElementById("limpiadores");
 Limpiadores.forEach(item => {
