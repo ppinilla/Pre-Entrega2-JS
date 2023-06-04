@@ -104,12 +104,32 @@ function sumarProducto(precio){
     alert(`Total de la compra $${total}`);
 }
 
-function eliminarProducto(codigo){
+// Función para eliminar un producto por su código
+function eliminarProducto(id) {
+    // Buscar el índice del producto en la lista
+    // Buscar el producto en la lista utilizando find()
+  var productoEncontrado = Productos.find(function(producto) {
+    return producto.id === id;
+  });
+
+  // Si se encontró el producto, eliminarlo de la lista utilizando splice()
+  if (productoEncontrado) {
+    var indice = Productos.indexOf(productoEncontrado);
+    Productos.splice(indice, 1);
+    total = total - suma(producto.precio, iva(producto.precio));
+    console.log("Producto eliminado correctamente.");
+  } else {
+    console.log("No se encontró ningún producto con el id especificado.");
+  }
+}
+
+
+/* function eliminarProducto(codigo){
     const producto = Productos.find(x => x.codigo === codigo);
     Productos.splice(Productos.indexOf(producto), 1);
     total = total - suma(producto.precio, iva(producto.precio));
     alert('Producto eliminado');
-}
+} */
 
 
 function calcularCuotas(cuotas){
@@ -306,7 +326,7 @@ if (mensaje1.toLowerCase() === "si"){
 if (total > 0){
     let mensaje2 = prompt("Desea eliminar algun producto? (si/no)");
     while (mensaje2.toLowerCase() === "si" && total > 0){
-        let mensaje3 = parseInt(prompt("Ingrese el codigo del producto que desee eliminar"));
+        let mensaje3 = parseInt(prompt("Ingrese el id del producto que desee eliminar"));
         eliminarProducto(mensaje3);
         mensaje2 = prompt("Desea eliminar otro producto? (si/no)")
     }
